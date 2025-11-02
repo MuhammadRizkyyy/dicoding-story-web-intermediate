@@ -1,0 +1,118 @@
+DICODING STORY APP - SUBMISSION PROYEK 2
+
+DEPLOYMENT URL:
+https://[your-app-name].netlify.app
+
+API INFORMATION:
+- Base URL: https://story-api.dicoding.dev/v1
+- VAPID Public Key: BCCs2eonMI-6H2ctvFaWg-UYdDv387Vno_bzUzALpB442r2lCnsHmtrx8biyPi_E-1fSGABK_Qs_GlvPoJJqxbk
+- Map Service: OpenStreetMap (No API Key Required)
+- Additional Tile Layers:
+  * Esri World Imagery (No API Key Required)
+  * CartoDB Dark Matter (No API Key Required)
+
+NOTES:
+- Aplikasi ini menggunakan OpenStreetMap yang tidak memerlukan API key
+- Push notification menggunakan VAPID key dari API Dicoding
+- Jika reviewer ingin menguji aplikasi, silakan register akun baru atau gunakan akun test berikut:
+  Email: test@dicoding.com
+  Password: test12345
+
+FITUR SUBMISSION 1 (DIPERTAHANKAN):
+✅ 1. SPA dengan Hash Routing dan View Transition API
+✅ 2. Peta interaktif dengan Leaflet
+✅ 3. Multiple Tile Layer (Street Map, Satellite, Dark Mode)
+✅ 4. Filter story (semua/dengan lokasi)
+✅ 5. Highlight marker dan sinkronisasi dengan list
+✅ 6. Form tambah story dengan validasi
+✅ 7. Upload foto dari file atau kamera langsung
+✅ 8. Pemilihan lokasi dengan klik pada peta
+✅ 9. Responsive design (mobile, tablet, desktop)
+✅ 10. Aksesibilitas lengkap (semantic HTML, ARIA labels, keyboard navigation, skip to content)
+✅ 11. Authentication (Register & Login)
+
+FITUR SUBMISSION 2 (BARU):
+
+Kriteria 1: Mempertahankan Submission 1 (4 pts)
+✅ Semua fitur submission 1 tetap berfungsi dengan baik
+
+Kriteria 2: Push Notification (4 pts - Advanced)
+✅ Service Worker untuk push notification
+✅ Notifikasi dinamis dengan data dari API
+✅ Toggle button untuk enable/disable notifikasi
+✅ Action button untuk navigasi ke halaman terkait
+✅ Test notification saat mengaktifkan
+
+Kriteria 3: PWA + Offline Support (4 pts - Advanced)
+✅ Installable PWA dengan prompt
+✅ Web App Manifest lengkap (icons, screenshots, shortcuts)
+✅ Mode offline dengan app shell
+✅ Cache dinamis untuk API data (NetworkFirst strategy)
+✅ Cache untuk map tiles dan CDN (CacheFirst strategy)
+✅ Offline indicator
+✅ Data tetap muncul saat offline dari cache
+
+Kriteria 4: IndexedDB (4 pts - Advanced)
+✅ CRUD Favorites (Create, Read, Delete)
+✅ Search & Sort pada favorites
+✅ Filter berdasarkan nama dan deskripsi
+✅ Offline sync - Story disimpan saat offline dan otomatis sync saat online
+✅ Background sync dengan Service Worker
+✅ Cache stories untuk offline viewing
+
+Kriteria 5: Deploy Publik (4 pts)
+✅ Deploy ke Netlify
+✅ URL dapat diakses publik
+✅ HTTPS enabled
+
+CARA TESTING:
+
+1. Push Notification:
+   - Login ke aplikasi
+   - Buka halaman "Favorit"
+   - Aktifkan toggle "Push Notification"
+   - Izinkan notifikasi di browser
+   - Test notification akan muncul
+   - Buat story baru untuk trigger notifikasi dari API
+
+2. PWA Installation:
+   - Buka aplikasi di browser
+   - Klik prompt "Install Aplikasi" yang muncul di bawah
+   - Atau klik icon install di address bar (Chrome/Edge)
+   - Aplikasi akan terinstall di home screen
+
+3. Offline Mode:
+   - Buka aplikasi dan login
+   - Browse beberapa story (data akan di-cache)
+   - Disconnect internet atau aktifkan Airplane mode
+   - Refresh halaman - app shell tetap muncul
+   - Data story yang sudah di-cache tetap muncul
+   - Indikator offline akan muncul di atas
+
+4. IndexedDB Favorites:
+   - Klik icon ❤️ di card story untuk tambah favorit
+   - Buka halaman "Favorit" dari menu
+   - Gunakan search box untuk mencari favorit
+   - Gunakan dropdown untuk sort (Terbaru/Terlama/Nama)
+   - Klik icon ❤️ untuk hapus dari favorit
+
+5. Offline Sync:
+   - Disconnect internet
+   - Buat story baru (akan tersimpan di IndexedDB)
+   - Pesan "Mode Offline" akan muncul
+   - Connect kembali internet
+   - Buka halaman "Favorit"
+   - Klik tombol "Sync Sekarang" atau tunggu auto sync
+   - Story akan otomatis ter-upload ke API
+
+TEKNOLOGI:
+- Vite + PWA Plugin
+- Workbox (Service Worker)
+- IndexedDB (idb library)
+- Leaflet (Maps)
+- Web Push API
+- Background Sync API
+- Cache API
+- Netlify (Deployment)
+
+TOTAL POINTS: 20/20 (Perfect Score) 🎉

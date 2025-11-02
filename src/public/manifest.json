@@ -1,0 +1,94 @@
+{
+  "name": "Dicoding Story App",
+  "short_name": "Story App",
+  "description": "Platform berbagi cerita untuk komunitas Dicoding dengan fitur peta interaktif dan offline support",
+  "theme_color": "#2196F3",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/images/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/images/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/images/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/images/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/images/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/images/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshot-mobile.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Tampilan Mobile - Daftar Story"
+    },
+    {
+      "src": "/images/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Tampilan Desktop - Peta Interaktif"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tambah Story",
+      "short_name": "Tambah",
+      "description": "Buat story baru",
+      "url": "/#/add-story",
+      "icons": [{ "src": "/images/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Favorite Stories",
+      "short_name": "Favorit",
+      "description": "Lihat story favorit",
+      "url": "/#/favorites",
+      "icons": [{ "src": "/images/icon-96x96.png", "sizes": "96x96" }]
+    }
+  ],
+  "categories": ["social", "education", "lifestyle"]
+}
